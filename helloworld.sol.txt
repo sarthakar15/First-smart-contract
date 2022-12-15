@@ -1,0 +1,19 @@
+//for evm compatible chain we use solidity
+// works on ethereum,polygon,avalanche etc.
+pragma solidity >=0.8.4; // code will compile on any version above 0.8.4 or 0.8.4
+contract helloworld{
+uint256 EthIOwn=0;
+
+function setvalue(uint256 x) public {
+
+EthIOwn=x;
+
+}
+ function getvalue() public view returns (uint256){
+return EthIOwn;
+
+
+ }
+
+
+}
